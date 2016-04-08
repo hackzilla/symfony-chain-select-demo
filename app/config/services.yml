@@ -43,3 +43,19 @@ services:
     #
     # // same code using repository services
     # $posts = $this->get('app.post_repository')->findAll();
+
+
+    app.form.level1:
+         class: AppBundle\Form\Type\Level1Type
+         tags:
+             - { name: form.type, alias: level1 }
+
+    app.form.level2:
+         class: AppBundle\Form\Type\Level2Type
+         tags:
+             - { name: form.type, alias: level2 }
+
+    app.form.level3:
+         class: AppBundle\Form\Type\Level3Type
+         tags:
+             - { name: form.type, alias: level3 }
